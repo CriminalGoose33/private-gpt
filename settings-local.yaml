@@ -11,8 +11,8 @@ llm:
   prompt_style: "llama3"
 
 llamacpp:
-  llm_hf_repo_id: lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF
-  llm_hf_model_file: Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf
+  llm_hf_repo_id: mradermacher/Ichigo-llama3.2-3B-s-instruct-GGUF
+  llm_hf_model_file: Ichigo-llama3.2-3B-s-instruct-GGUF
 
 embedding:
   mode: huggingface

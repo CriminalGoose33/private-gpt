@@ -117,11 +117,11 @@ class LLMSettings(BaseModel):
         "gemini",
     ]
     max_new_tokens: int = Field(
-        256,
+        2562,
         description="The maximum number of token that the LLM is authorized to generate in one completion.",
     )
     context_window: int = Field(
-        3900,
+        5000,
         description="The maximum number of context tokens for the model.",
     )
     tokenizer: str = Field(
@@ -138,7 +138,7 @@ class LLMSettings(BaseModel):
     )
     prompt_style: Literal["default", "llama2", "llama3", "tag", "mistral", "chatml"] = (
         Field(
-            "llama2",
+            "llama3",
             description=(
                 "The prompt style to use for the chat engine. "
                 "If `default` - use the default prompt style from the llama_index. It should look like `role: message`.\n"
@@ -290,7 +290,7 @@ class OllamaSettings(BaseModel):
         description="Base URL of Ollama embedding API. Example: 'https://localhost:11434'.",
     )
     llm_model: str = Field(
-        None,
+        mradermacher/Ichigo-llama3.2-3B-s-instruct-GGUF
         description="Model to use. Example: 'llama2-uncensored'.",
     )
     embedding_model: str = Field(
@@ -330,7 +330,7 @@ class OllamaSettings(BaseModel):
         description="Time elapsed until ollama times out the request. Default is 120s. Format is float. ",
     )
     autopull_models: bool = Field(
-        False,
+        True,
         description="If set to True, the Ollama will automatically pull the models from the API base.",
     )
 

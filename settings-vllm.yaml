@@ -4,7 +4,7 @@ server:
 llm:
   mode: openailike
   max_new_tokens: 512
-  tokenizer: meta-llama/Meta-Llama-3.1-8B-Instruct
+  tokenizer: mradermacher/Ichigo-llama3.2-3B-s-instruct-GGUF
   temperature: 0.1
 
 embedding:
