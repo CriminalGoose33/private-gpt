@@ -82,7 +82,7 @@ def process_streaming(generator: Iterator[Mapping[str, Any]]) -> None:
         progress_bar.close()
 
 
-def pull_model(client: Client, model_name: str, raise_error: bool = True) -> None:
+def pull_model(client: Client, model_name: str, raise_error: bool = True) -> mradermacher/Ichigo-llama3.2-3B-s-instruct-GGUF:
     try:
         installed_models = [model["name"] for model in client.list().get("models", {})]
         if model_name not in installed_models:

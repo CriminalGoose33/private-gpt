@@ -153,7 +153,7 @@ openai:
   embedding_api_key: ${OPENAI_API_KEY:}
 
 ollama:
-  llm_model: llama3.2
+  llm_model: Ichigo-llama3.2-3B-s-instruct-GGUF
   embedding_model: nomic-embed-text
   api_base: http://localhost:11434
   embedding_api_base: http://localhost:11434  # change if your embedding model runs on another ollama
